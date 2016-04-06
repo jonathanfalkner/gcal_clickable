@@ -1,0 +1,14 @@
+{
+    "manifest_version": 2,
+    "content_scripts": [ {
+        "exclude_globs":    [  ],
+        "include_globs":    [ "*" ],
+        "js":               [ "clickable_where.user.js" ],
+        "matches":          [ "*://*.calendar.google.com/*" ],
+        "run_at": "document_end"
+    } ],
+    "converted_from_user_script": true,
+    "description":  "Fixes the issue where links in Google Calendar's popups aren't clickable.",
+    "name":         "Google Calendar Clickable links in Where field",
+    "version":      "1"
+}
